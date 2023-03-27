@@ -1,3 +1,42 @@
+@font-face {
+  font-family: DSEG7Classic;
+  src: url("./assets/DSEG7Classic-Italic.woff2");
+}
+
+.stopwatch {
+  background-color: white;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.time-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-back {
+  font-family: DSEG7Classic;
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.06);
+  user-select: none;
+  margin-bottom: -24px;
+}
+
+.time {
+  font-family: DSEG7Classic;
+  font-size: 38px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.action {
+  display: flex;
+  margin-top: 16px;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15,12 +54,10 @@
 }
 
 .container {
-  margin: 0;
-  padding-top: 10vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
 }
 
 .logo {
