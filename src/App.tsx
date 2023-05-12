@@ -5,10 +5,11 @@ const addZero = (num: number) => {
 };
 
 const formatTime = (time: number) => {
+  const hours = Math.floor(time / 3600);
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
 
-  return `${addZero(minutes)}:${addZero(seconds)}`;
+  return `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds)}`;
 };
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
       </div>
       <div className="stopwatch">
         <div className="time-wrapper">
-          <div className="time-back">88:88</div>
+          <div className="time-back">88:88:88</div>
           <div className="time">{formatTime(time)}</div>
         </div>
       </div>
