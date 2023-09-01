@@ -35,6 +35,7 @@
 .action {
   display: flex;
   margin-top: 16px;
+  gap: 8px;
 }
 
 :root {
