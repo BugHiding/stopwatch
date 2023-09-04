@@ -6,14 +6,14 @@ const addZero = (num: number) => {
 
 const formatTime = (time: number) => {
   const hours = Math.floor(time / 3600);
-  const minutes = Math.floor(time / 60);
+  const minutes = Math.floor((time % 3600) / 60);
   const seconds = time % 60;
 
   return `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds)}`;
 };
 
 function App() {
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(10000);
   const [timerId, setTimeId] = useState<any>(null);
   const [edit, setEdit] = useState(false);
   const [taskName, setTaskName] = useState("任务名称");
